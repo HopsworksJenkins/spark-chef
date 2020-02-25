@@ -5,7 +5,6 @@ include_attribute "hive2"
 include_attribute "elastic"
 
 default['hadoop_spark']['user']                                 = node['install']['user'].empty? ? "spark" : node['install']['user']
-default['hadoop_spark']['group']                                = node['install']['user'].empty? ? node['hops']['group'] : node['install']['user']
 
 default['hadoop_spark']['version']                              = "2.4.3.1"
 default['scala']['version'] 	                                = "2.11"
